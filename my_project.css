@@ -1,0 +1,563 @@
+/* Global styles */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    font-family: sans-serif;
+    color: black;
+     background-color: goldenrod; 
+
+}
+
+
+
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+} 
+
+
+ header h1{
+
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    color: goldenrod;
+    
+}
+
+@keyframes logo{
+    0%{
+        transform: translate(-50%);
+    }
+
+    100%{
+        transform: translate(300%);
+        border-radius: 0px;
+    }
+}
+
+
+nav {
+    float: right;
+}
+
+
+
+nav a {
+
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: goldenrod;
+   
+
+
+}
+
+
+
+
+nav a:hover {
+    background-color: #ccc;
+    animation-name: nava;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes nava {
+    
+    0%{transform: rotatey(360deg);}
+
+    100%{transform: rotatey(50px);}
+}
+
+
+/* Main styles */
+
+main {
+    padding: 50px 0;
+}
+
+
+
+section {
+
+    margin-bottom: 50px;
+
+}
+
+
+
+/* Hero section styles */
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 90vh;
+    background-image: url(marquee-grad-1600x900.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    line-height: normal;
+
+}
+
+#hero img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+
+#hero h1 {
+    
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+
+
+#hero p {
+
+    color: #fff;
+    font-size: 24px;
+    /* margin-top: 20px; */
+
+}
+
+
+
+/* About section styles */
+
+#about {
+
+    padding: 0 50px;
+
+}
+
+
+
+#about h2 {
+
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+
+
+#about p {
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+
+
+/* Services section styles */
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: goldenrod;
+}
+
+#serve {
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service-type {
+
+    width: 33%;
+    /* margin-bottom: 20px; */
+    color: black;
+}
+
+
+
+.service-type img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+
+.service-type h3 {
+
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 10px;
+    
+
+}
+
+
+
+.service-type p {
+
+    font-size:15px;
+    line-height: .5cm;
+    /* background-color: wheat; */
+    padding: 10px;
+
+}
+
+
+
+
+/* Portfolio section styles */
+
+#work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+#portfolio {
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.item1{
+    position: relative;
+    animation-name: item1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes item1{
+    0%{
+        left: -50px;
+    }
+    100%{ left: 0;}
+}
+
+main.item2 :active{
+    position: relative;
+    animation-name: b-item;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    z-index: -1;
+}
+@keyframes item2{
+    0%{
+        transform: translate(-20%);
+    }
+    100%{ transform:translate(0%);
+        border-radius: 0px;
+    }
+}
+
+  main .item3:active{
+    position: relative;
+    z-index: -1;
+    animation-name: k-item;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    
+}
+
+@keyframes k-item{
+    0%{
+        transform: translate(-50%);
+    }
+    50%{transform: translateX(50%);}
+    100%{
+        transform: translate(0%);
+        border-radius: 0px;
+    }
+}
+
+.item4{
+    position: relative;
+    animation-name: item4;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes item4{
+    0%{
+    right:-10px;
+    }
+    100%{ right: 0;}
+}
+
+
+.item5{
+    position: relative;
+    animation-name: item5;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes item5{
+    0%{
+        top: -20px;
+    }
+    100%{ top: 0;}
+}
+.portfolio-item img {
+    width: 80%;
+    height: 150px;
+    
+
+}
+
+
+
+ .portfolio-item h3 {
+
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+
+} 
+
+
+
+ .portfolio-item p {
+
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+
+} 
+
+
+
+/* Contact section styles */
+
+#contact {
+
+    padding: 0 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: goldenrod;
+}
+
+
+
+#contact h2 {
+
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+#contact form {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+}
+
+
+
+#contact input,
+
+#contact textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+}
+
+
+
+/* Footer styles */
+
+footer {
+
+    padding: 20px 0;
+
+    text-align: center
+}
+
+
+
+/* Media queries */
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* Make the hero section image full-width on mobile devices */
+
+    #hero {
+
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+
+
+    /* Make the navigation links stack on top of each other on mobile devices */
+
+    nav {
+
+        float: none;
+
+        text-align: center;
+
+    }
+
+/* Make the service type stack on top of each other on mobile devices */
+
+    #serve{
+        flex-direction: column;
+            width: 100%;
+            padding: auto;
+        
+    }
+
+    .service-type{
+        object-fit: cover;
+        width: fit-content;
+        padding: auto;
+    }
+
+    /* Make the portfolio items stack on top of each other on mobile devices */
+
+    #portfolio {
+
+        flex-direction: column;
+        width: 100%;
+        padding: auto;
+    }
+
+    .portfolio-item{
+        object-fit: cover;
+        width: fit-content;
+        padding: auto;
+    }
+
+    .portfolio-item img{
+        width: 300px;
+        height: 80%;
+    }
+
+
+}
+
+
+
+/* Animations */
+
+
+
+@keyframes fade-in {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+/* Make the portfolio items fade in when the page loads */
+
+.portfolio-item {
+
+    animation: fade-in 0.5s ease-in-out;
+
+}
